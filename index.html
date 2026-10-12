@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metropolis Group</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #fcf8fa;
+        }
+        header {
+            background: #1e293b;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #db2777;
+        }
+        header h1 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            color: #f472b6;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f472b6;
+        }
+        .hero {
+            background: linear-gradient(rgba(30, 41, 59, 0.85), rgba(30, 41, 59, 0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 7rem 2rem;
+        }
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #cbd5e1;
+        }
+        .btn {
+            background: #db2777;
+            color: white;
+            padding: 0.85rem 1.8rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #be185d;
+            transform: translateY(-2px);
+        }
+        section {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(219, 39, 119, 0.05);
+            border-top: 4px solid #db2777;
+        }
+        section h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #1e293b;
+            border-bottom: 2px solid #f472b6;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+        .about-text {
+            font-size: 1.1rem;
+            color: #475569;
+            margin-bottom: 1rem;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .project-card {
+            background: #fff5f7;
+            border: 1px solid #fbcfe8;
+            padding: 1.8rem;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+        }
+        .project-card h4 {
+            margin-bottom: 0.75rem;
+            color: #9d174d;
+            font-size: 1.2rem;
+        }
+        .project-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .contact-card {
+            background: #f8fafc;
+            border-left: 4px solid #db2777;
+            padding: 1.5rem;
+            border-radius: 6px;
+        }
+        .contact-card h4 {
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        .contact-card p {
+            color: #475569;
+            font-size: 1.05rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1e293b;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            border-top: 2px solid #db2777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Metropolis Group</h1>
+        <nav>
+            <a href="#rreth-nesh">Rreth Nesh</a>
+            <a href="#projektet">Projektet</a>
+            <a href="#kontakti">Kontakti</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Metropolis Group</h2>
+        <p>Lidhja e Zhvillimit Industrial, Hekurudhor dhe Energjetik</p>
+        <a href="#kontakti" class="btn">Na Kontaktoni</a>
+    </div>
+
+    <section id="rreth-nesh">
+        <h3>Rreth Nesh</h3>
+        <p class="about-text"><strong>Metropolis Group</strong> me seli në Prizren është kompani e specializuar në ofrimin e zgjidhjeve të avancuara inxhinierike, prokurimit të pajisjeve industriale, menaxhimit të projekteve madhore infrastrukturore dhe hekurudhore, si dhe mbështetjes në tenderë publikë.</p>
+        <p class="about-text">Ne angazhohemi çdo ditë për të sjellë standardet më të larta të cilësisë, duke bashkëpunuar ngushtë me partnerë dhe furnitorë ndërkombëtarë për të përmbushur kërkesat më sfiduese të tregut.</p>
+    </section>
+
+    <section id="projektet">
+        <h3>Projektet & Sektorët</h3>
+        <p class="about-text">Fushat kryesore ku shtrihet veprimtaria dhe ekspertiza jonë:</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4>Hekurudha & Transporti</h4>
+                <p>Furnizim me komponentë të dedikuar për rrjetet hekurudhore, sisteme sigurie në kalime dhe pajisje të rënda për infrastrukturën e transportit.</p>
+            </div>
+            <div class="project-card">
+                <h4>Projekte Energjetike</h4>
+                <p>Angazhim në furnizimin e pajisjeve për sektorin elektroenergjetik, nënstacione mobile dhe zgjidhje të qëndrueshme energjetike.</p>
+            </div>
+            <div class="project-card">
+                <h4>Propozime & Tenderë</h4>
+                <p>Përgatitja dhe menaxhimi i ofertave teknike dhe komerciale, duke siguruar dokumentacionin dhe pajtueshmërinë e plotë me standardet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakti">
+        <h3>Kontakti</h3>
+        <p class="about-text">Jemi të hapur për bashkëpunim dhe partneritete të reja. Na kontaktoni përmes të dhënave më poshtë:</p>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h4>Adresa</h4>
+                <p>Rruga Besim Shala 6<br>Prizren, Kosovë</p>
+            </div>
+            <div class="contact-card">
+                <h4>Telefonat</h4>
+                <p>+383 49 727 700<br>+383 49 471 225</p>
+            </div>
+            <div class="contact-card">
+                <h4>Adresat e E-mail</h4>
+                <p>info.ntsh.metropolis@gmail.com<br>fatonbajcinca@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Metropolis Group. Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+
+</body>
+</html>
